@@ -89,13 +89,15 @@ h1 {
     line-height: 1.25;
 }
 
-header .row {
+.header__row {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .header__description {
+    width: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -160,14 +162,8 @@ header .row {
     opacity: 0.5;
 }
 
-.header--img--wrapper {
-    margin-top: 48px;
-    max-width: 512px;
-    margin: 0 auto;
-}
-
 .header__img {
-    width: 100%;
+    width: 60%;
     max-width: 512px;
     align-content: center;
 }
