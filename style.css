@@ -6,6 +6,11 @@
     font-family: 'Inter', serif;
 }
 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
@@ -223,6 +228,11 @@ FEATURES
     text-transform: uppercase;
 }
 
+#features .section__title,
+#pricing, .section__title {
+    text-align: center;
+}
+
 .section__title {
     font-size: 48px;
     font-weight: 900;
@@ -423,6 +433,12 @@ PRICING
 
 */
 
+#pricing .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .plans {
     display: flex;
     justify-content: space-between;
@@ -453,7 +469,7 @@ PRICING
     color: #f7fafc;
     background: linear-gradient(115deg,
                 rgb(56, 178, 172) 0%   
-                rgb(129, 230, 217) 100%)
+                rgb(129, 230, 217) 100%);
 }
 
 .plan__top, .plan__middle,
@@ -513,3 +529,116 @@ PRICING
     letter-spacing: 0.025em;
 }
 
+.plan__feature {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.plan__bottom {
+    z-index: 10;
+    position: relative;
+}
+
+.plan__top, .plan__middle, 
+.plan__bottom {
+    text-align: center;
+}
+
+.plan__button {
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 500px;
+    border: none;
+    padding: 16px 32px;
+    font-size: 14px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    transition: all 300ms;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+.footer__columns {
+    margin-top: -48px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__column {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+
+.footer__column--title {
+    font-weight: 700;
+    color: black;
+    line-height: 1.5;
+}
+
+.footer__column--link:nth-child(2) {
+    margin-top: 24px;
+}
+
+.footer__column--link:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: white;
+    transition: all 300ms;
+    opacity: 0;
+}
+
+.footer__column--link {
+    color: black;
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+
+.footer__divider {
+    width: 100%;
+    height: 2px;
+    margin: 64px 0;
+    background: rgb(116, 44, 255);
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo--img {
+    height: 32px;
+    width: 32px;
+}
