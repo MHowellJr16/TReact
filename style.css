@@ -203,7 +203,7 @@ FEATURES
     padding: 80px 0;
 }
 
-#features .features__row--narrow {
+#features, .features__row--narrow {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +289,7 @@ QUALITY
 
 */
 
-#quality .row {
+#quality, .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -362,6 +362,12 @@ STEPS
 
 */
 
+#steps, .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .steps__img--wrapper {
     display: flex;
     position: relative;
@@ -375,3 +381,135 @@ STEPS
     padding: 32px 0;
     padding-left: 64px;
  }
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    max-width: 320px;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 28px;
+    color: #243e63;
+    line-height: 1;
+}
+
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+/*
+
+PRICING 
+
+*/
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.plan {
+    width: 100%;
+    max-width: 384px;
+    margin: 64px 32px 0 0;
+    padding-top: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px
+                rgba(0, 0, 0, 0.1) 0px 1px 3px 0px
+                rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    position: relative;
+    z-index: 100;
+    background: white;
+}
+
+.plan:nth-child(1)
+.plan__stripe, .plan:nth-child(1)
+.plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg,
+                rgb(56, 178, 172) 0%   
+                rgb(129, 230, 217) 100%)
+}
+
+.plan__top, .plan__middle,
+.plan__bottom {
+    padding: 32px;
+    text-align: center;
+}
+
+.plan:nth-child(odd) .plan__name, 
+.plan:nth-child(odd) .plan__price, 
+.plan:nth-child(odd) .plan__target {
+    color: #1a202c;
+}
+
+.plan__name {
+    font-size: 20px;
+}
+
+.plan__price {
+    font-size: 48px;
+    margin: 4px 0;
+}
+
+.plan__name, .plan__price, 
+.plan__duration {
+    font-weight: bold;
+    line-height: 1.625;
+}
+
+.plan:nth-child(odd) 
+.plan__duration {
+    color: #a0aec0;
+}
+
+.plan__duration {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+
+.plan__name, .plan__price, 
+.plan__duration {
+    font-weight: bold;
+    line-height: 1.625;
+}
+
+.plan:nth-child(odd)
+.plan__name, .plan:nth-child(odd) 
+.plan__price, .plan:nth-child(odd)
+.plan__target {
+    color: #1a202c;
+}
+
+.plan__target {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+}
+
