@@ -31,6 +31,12 @@ nav {
     display: flex;
 }
 
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 
 .nav__row {
     display: flex;
@@ -106,12 +112,6 @@ header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.row {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
 }
 
 .header__row {
