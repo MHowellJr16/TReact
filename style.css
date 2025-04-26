@@ -466,10 +466,16 @@ PRICING
 .plan:nth-child(1)
 .plan__stripe, .plan:nth-child(1)
 .plan__button {
-    color: #f7fafc;
+    color: black;
     background: linear-gradient(115deg,
                 rgb(56, 178, 172) 0%   
                 rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234)
+    100%);
+    color: white;
 }
 
 .plan__top, .plan__middle,
@@ -560,6 +566,10 @@ PRICING
     line-height: 1.5;
     transition: all 300ms;
 }
+.plan:nth-child(2), .plan__price, .plan__target, 
+.plan__duration, .plan__middle, .plan__feature {
+    color: white;
+}
 
 button {
     cursor: pointer;
@@ -571,7 +581,14 @@ FOOTER
 
 */
 
+footer {
+    padding: 50px 32px;
+    background-color: rgb(116, 44, 255);
+}
+
 .footer__columns {
+    width: 100%;
+    max-width: 1200px;
     margin-top: -48px;
     display: flex;
     justify-content: space-between;
@@ -589,7 +606,7 @@ FOOTER
 
 .footer__column--title {
     font-weight: 700;
-    color: black;
+    color: white;
     line-height: 1.5;
 }
 
@@ -610,7 +627,7 @@ FOOTER
 }
 
 .footer__column--link {
-    color: black;
+    color: white;
     font-size: 14px;
     margin-top: 12px;
     line-height: 1.5;
@@ -641,4 +658,8 @@ a {
 .footer__logo--img {
     height: 32px;
     width: 32px;
+}
+
+.footer__copyright {
+    color: white;
 }
