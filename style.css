@@ -577,6 +577,42 @@ button {
 
 /* 
 
+TESTIMONIALS
+
+*/
+
+.testimonials__img {
+    width: 40%;
+}
+
+.testimonials__description {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.testimonials {
+    margin-top: 40px;
+}
+
+.testimonial__rating i {
+    color: rgb(246, 173, 85);
+    margin-right: 2px;
+    margin-top: 4px;
+}
+
+.testimonial__title {
+    margin-top: 16px;
+}
+
+.testimonial__para {
+    margin: 16px;
+    line-height: 1.7;
+}
+
+/* 
+
 FOOTER
 
 */
