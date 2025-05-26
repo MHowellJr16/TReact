@@ -979,6 +979,44 @@ MEDIA QUERIES
 
 */
 
+@media(max-width: 1280px) {
+    header .row {
+        align-items: flex-end;
+    }
+
+    .header__img--wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__img {
+        max-width: 512px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: none;
+    }
+
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quality__description {
+        margin-right: 0px;
+    }
+
+    footer {
+        padding: 80px 32px;
+    }
+}
+
 @media(max-width: 768px) {
    
     .section__para {
