@@ -1040,6 +1040,14 @@ MEDIA QUERIES
         margin-right: 0px;
     }
 
+    .features {
+        max-width: 768px;
+    }
+
+    .feature {
+        width: calc(50%);
+    }
+
     footer {
         padding: 80px 32px;
     }
