@@ -165,7 +165,7 @@ header .row {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .header__description--para {
@@ -768,6 +768,7 @@ TESTIMONIALS
 }
 
 .testimonial__bottom {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -776,6 +777,10 @@ TESTIMONIALS
 .testimonial__profile {
     display: flex;
     align-items: center;
+}
+
+.testimonial__left {
+    display: flex;
 }
 
 .testimonial__img {
