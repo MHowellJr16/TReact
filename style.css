@@ -126,6 +126,57 @@ li {
     text-decoration: none;
 }
 
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    transform: all 300ms ease;
+    display: none;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #1a202c;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    color: white;
+    font-size: 20px;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
 .purple {
     color: #6415ff;
 }
@@ -776,6 +827,7 @@ TESTIMONIALS
 
 .testimonial__profile {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -1109,7 +1161,7 @@ MEDIA QUERIES
     }
 
     .btn__menu {
-        display: none;
+        display: block;
     }
 
     header .row {

@@ -6,24 +6,45 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5d6f777a5b.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <title>TReact Project</title>
 </head>
 <body>
     <section id="landing">
         <nav>
             <div class="row nav__row">
-            <div class="nav__logo">
-                <img src="./assets/assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="" class="nav__logo--img">
+                <div class="nav__logo">
+                    <img src="./assets/assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="" class="nav__logo--img">
                 <div class="nav__logo--title">Treact</div>
-            </div>
-            <ul class="nav__links">
-                <li><a href="#" class="nav__link">About</a></li>
-                <li><a href="#" class="nav__link">Blog</a></li>
-                <li><a href="#" class="nav__link">Pricing</a></li>
-                <li><a href="#" class="nav__link">Contact Us</a></li>
-                <li><a href="#" class="nav__link nav__link--log-in">Login</a></li>
-                <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
-            </ul>
+                </div>
+                <ul class="nav__links">
+                    <li><a href="#" class="nav__link">About</a></li>
+                    <li><a href="#" class="nav__link">Blog</a></li>
+                    <li><a href="#" class="nav__link">Pricing</a></li>
+                    <li><a href="#" class="nav__link">Contact Us</a></li>
+                    <li><a href="#" class="nav__link nav__link--log-in">Login</a></li>
+                    <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
+                </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list"><a href="#" class="menu__link">About</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link">Blog</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link">Pricing</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link">Contact Us</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link">Login</a></li>
+                        <li class="menu__list"><a href="#" class="menu__link">Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <header>
@@ -331,26 +352,24 @@
                                     minus cumque blanditiis distinctio mollitia tempora consectetur autem rem delectus et, deserunt doloremque odit dolorum ipsum! Facere quia praesentium voluptas veritatis, reprehenderit libero, eligendi sit assumenda minus aut voluptatibus exercitationem iste mollitia ea maiores.</p>
                                 <div class="testimonial__bottom">
                                     <div class="testimonial__profile">
-                                        <div class="testimonial__left">
-                                            <img src="./assets/assets/photo-1494790108377-be9c29b29330.avif" class="testimonial__img" alt="">
-                                            <div class="testimonial__details">
-                                                <div class="testimonial__name">Gloria James</div>
-                                                <div class="testimonial__role">Manager, Amazon Web Services</div>
-                                            </div>
+                                        <img src="./assets/assets/photo-1494790108377-be9c29b29330.avif" class="testimonial__img" alt="">
+                                        <div class="testimonial__details">
+                                                <div class="testimonial__name">Charlotte Hale</div>
+                                                <div class="testimonial__role">Director, Delos,Inc.</div>
                                         </div>
-                                        <div class="testimonial__buttons">
-                                            <button class="testimonial__button">
-                                                <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                                    </div>
+                                    <div class="testimonial__buttons">
+                                        <button class="testimonial__button">
+                                            <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
                                                     <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                                                </svg>
-                                            </button>
-                                            <div class="divider"></div>
-                                            <button class="testimonial__button">
-                                                <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
+                                            </svg>
+                                        </button>
+                                        <div class="divider"></div>
+                                        <button class="testimonial__button">
+                                            <svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24">
                                                     <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                                </svg>
-                                            </button>
-                                        </div>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
