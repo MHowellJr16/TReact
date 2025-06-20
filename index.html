@@ -32,21 +32,25 @@
                         <line x1="3" y1="18" x2="21" y2="18"></line>
                     </svg>
                 </button>
-                <div class="menu__backdrop">
-                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <ul class="menu__links">
-                        <li class="menu__list"><a href="#" class="menu__link">About</a></li>
-                        <li class="menu__list"><a href="#" class="menu__link">Blog</a></li>
-                        <li class="menu__list"><a href="#" class="menu__link">Pricing</a></li>
-                        <li class="menu__list"><a href="#" class="menu__link">Contact Us</a></li>
-                        <li class="menu__list"><a href="#" class="menu__link">Login</a></li>
-                        <li class="menu__list"><a href="#" class="menu__link">Sign Up</a></li>
-                    </ul>
                 </div>
             </div>
         </nav>
+        <div class="modal">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__links">
+                <div class="modal__link">About</div>
+                <div class="modal__link">Blog</div>
+                <div class="modal__link">Pricing</div>
+                <div class="modal__link">Contact Us</div>
+                <div class="modal__link">Login</div>
+                <div class="modal__link modal__link--primary">Sign Up</div>
+            </div>
+        </div>
         <header>
             <div class="container">
             <div class="row">
@@ -242,8 +246,8 @@
                                         </figure>
                                         <div class="value__name">Affordable</div>
                                     </div>
-                                        <div class="value__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Saepe dolores facilis nam cupiditate deleniti cum sapiente magni eligendi ratione laborum?</div>
+                                        <div class="value__para"> We promise to offer you 
+                                            the best rate we can - at par with the industry standard.</div>
                                 </div>
                                 <div class="value">
                                     <div class="value__title">
@@ -255,10 +259,12 @@
                                         </figure>
                                         <div class="value__name">Professionalism</div>
                                     </div>
-                                        <div class="value__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Saepe dolores facilis nam cupiditate deleniti cum sapiente magni eligendi ratione laborum?</div>
+                                        <div class="value__para">
+                                    We assure you that our templates 
+                                    are designed and created by professional designers.</div>
                                 </div>
                             </div>
+                            <button class="btn">Learn More</button>
                         </div>
                         <img src="./assets/assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="" class="values__img">
                     </div>
