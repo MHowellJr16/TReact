@@ -1361,6 +1361,10 @@ MEDIA QUERIES
         margin-bottom: 80px;
     }
 
+    #features, .section__title {
+        text-align: center;
+    }
+
     #features .section__title, 
     #pricing .section__title {
         font-size: 36px;
@@ -1464,6 +1468,11 @@ MEDIA QUERIES
 
 @media(max-width: 425px) {
 
-   
-   
+   .value__title {
+    justify-content: center;
+   }
+
+   .value__para {
+    justify-content: center;
+   }
 }
