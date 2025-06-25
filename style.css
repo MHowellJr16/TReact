@@ -381,7 +381,6 @@ FEATURES
 }
 
 
-
 .section__title {
     font-size: 48px;
     font-weight: 900;
@@ -410,7 +409,6 @@ FEATURES
 }
 
 .feature {
-    
     width: calc(100% / 3);
 }
 
@@ -1274,6 +1272,10 @@ MEDIA QUERIES
         max-width: 320px;
     }
 
+    .value:nth-of-type(1), .value:nth-of-type(2) {
+        margin-top: 40px;
+    }
+
     .start__row {
         flex-direction: column;
     }
@@ -1315,6 +1317,20 @@ MEDIA QUERIES
     .feature {
         width: auto;
         max-width: 384px;
+    }
+
+    .values__list {
+        margin: 0 auto;
+    }
+
+    .value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value:nth-of-type(1) {
+        margin-right: 0px;
     }
 
     .quality__description, .quality__img--wrapper, .steps__description, 
