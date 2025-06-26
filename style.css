@@ -64,7 +64,7 @@ nav {
 
 .row {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -1246,6 +1246,10 @@ MEDIA QUERIES
         margin: 0 auto;
     }
 
+    .header__description--para {
+        margin: 20px 0;
+    }
+
     .quality__description {
         margin-right: 0px;
     }
@@ -1256,6 +1260,10 @@ MEDIA QUERIES
 
     .feature {
         width: calc(50%);
+    }
+
+    .feature__para {
+        max-width: none;
     }
 
     .plans {
@@ -1342,9 +1350,9 @@ MEDIA QUERIES
 
     .quality__description, .step__description,
     .values__description, .testimonials__description {
+        padding: 0;
         margin-top: 64px;
         text-align: center;
-        padding: 0;
     }
 
     .step {
@@ -1355,6 +1363,10 @@ MEDIA QUERIES
     .step__description {
         margin-top: 12px;
         margin-left: 0px;
+    }
+
+    .steps__description {
+        padding-left: 0px;
     }
 
     #steps .row, #testimonials .row {
@@ -1368,6 +1380,10 @@ MEDIA QUERIES
 
     .footer__columns {
         justify-content: flex-start;
+    }
+
+    .footer__column {
+        width: calc(100% / 3);
     }
 
     .footer__bottom {
@@ -1399,6 +1415,34 @@ MEDIA QUERIES
         padding-bottom: 4px;
     }
 
+    h1 {
+        text-align: center;
+    }
+
+    .header__description--para {
+        text-align: center;
+    }
+
+    .header__email {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
     main {
         margin-bottom: 80px;
     }
@@ -1412,6 +1456,27 @@ MEDIA QUERIES
         font-size: 36px;
     }
 
+    .feature__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature__text {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+    .feature__title {
+        letter-spacing: 0.0025em;
+        line-height: 1;
+    }
+
+    .feature__para {
+        margin-top: 4px;
+        line-height: 2;
+    }
+
     #pricing .row {
         margin-top: 40px;
     }
@@ -1421,9 +1486,14 @@ MEDIA QUERIES
         line-height: 1.25;
     }
 
+    .section__tag {
+        text-align: center;
+    }
+
     .section__para {
         font-size: 14px;
     }
+
 
     .steps .section__title {
         margin: 16px 0px 0px;
